@@ -95,6 +95,9 @@ function draw() {
         gameState = END;
     }
   }
+  if(score === 2900){
+    gameState=PLAY;
+  }
   else if (gameState === END) {
     gameOver.visible = true;
     restart.visible = true;
